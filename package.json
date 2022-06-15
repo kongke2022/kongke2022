@@ -1,0 +1,38 @@
+{
+  "name": "kongke2018",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "captchapng": "^0.0.1",
+    "core-js": "^3.8.3",
+    "mysql": "^2.18.1",
+    "sha1": "^1.1.1",
+    "vue": "^2.6.14",
+    "vue-core-video-player": "^0.2.0",
+    "vue-danmaku": "^1.4.2",
+    "vue-router": "^3.5.1",
+    "vuetify": "^2.6.0",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.5.0",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify-loader": "^1.7.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

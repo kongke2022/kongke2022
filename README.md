@@ -1,16 +1,19 @@
-### Hi there 👋
+# kongke2018
 
-<!--
-**kongke2022/kongke2022** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Project setup
+```
+npm install
+```
 
-Here are some ideas to get you started:
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
