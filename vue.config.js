@@ -6,7 +6,7 @@ module.exports = defineConfig({
   // devServer: {
   //   proxy: {
   //   '/api': {
-  //   target: 'http://121.4.138.96:3000',
+  //   target: 'http://localhost:3000',
   //   changeOrigin: true, // 解决跨域
   //   pathRewrite: {
   //   '^/api': '', 

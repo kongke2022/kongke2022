@@ -1,23 +1,25 @@
 <template>
   <div>
     <div class="danmu">
-          <vue-danmaku :danmus="danmus" style="height: 49px; width: 2000px;" loop :isSuspend= "isSuspend" ref="danmucomponent"></vue-danmaku>
+          <vue-danmaku :danmus="danmus" style="height: 80px; width: 2000px;" loop :isSuspend= "isSuspend" ref="danmucomponent" ></vue-danmaku>
     </div>
-    <v-chip
+    <!-- <v-chip
       class="ma-2"
       color="primary"
     >
       {{tag}}
-    </v-chip>
-   <v-carousel hide-delimiters @change="updateinfo">
+    </v-chip> -->
+   <v-carousel hide-delimiters @change="updateinfo" height="520px">
     <v-carousel-item
       v-for="(url,i) in imgurlarray"
       :key="i"
       :src="url"
     ></v-carousel-item>
   </v-carousel>
-    <v-text-field v-model="shotdanmu" hint="正在上膛" label="发个弹幕记录一下" :value="danmucontent"></v-text-field>
-    <v-btn block :loading="loadingstate" color="primary" @click="shot()">shot</v-btn>
+  <div class = "white">
+     <v-text-field v-model="shotdanmu" hint="正在上膛" label="发个弹幕记录一下" :value="danmucontent"></v-text-field>
+     <v-btn block :loading="loadingstate" color="primary" @click="shot()">shot</v-btn>
+  </div>
   </div>
 </template>
 <style>

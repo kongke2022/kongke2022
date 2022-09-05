@@ -1,6 +1,8 @@
 <template>
-  <v-app>
-  
+   <v-app>
+    <div style="background-image: url('http://43.142.143.244/wp-content/uploads/2022/06/QQ图片20220617170317-1-scaled.jpg');">
+
+    </div>
     <v-main>
       <router-view/>
     </v-main>
@@ -19,8 +21,8 @@
       <v-icon>mdi-music-note</v-icon>
     </v-btn>
 
-    <v-btn>
-      <span>Book</span>
+    <v-btn link to="/book">
+      <span>通讯录</span>
       <v-icon>mdi-book</v-icon>
     </v-btn>
 
@@ -30,6 +32,8 @@
     </v-btn>
   </v-bottom-navigation>
 </v-app>
+</div>
+ 
 </template>
 <script>
   export default {
