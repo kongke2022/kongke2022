@@ -1,32 +1,57 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+   <v-app>
+    <div style="background-image: url('http://43.142.143.244/wp-content/uploads/2022/06/QQ图片20220617170317-1-scaled.jpg');">
+
+    </div>
+    <v-main>
+      <router-view/>
+    </v-main>
+  <v-bottom-navigation
+    v-model="bottomNav"
+    shift
+    class = "sucess"
+  >
+    <v-btn link to="/about">
+      <span>地图</span>
+      <v-icon>mdi-map</v-icon>
+    </v-btn>
+
+    <v-btn>
+      <span>Music</span>
+      <v-icon>mdi-music-note</v-icon>
+    </v-btn>
+
+    <v-btn link to="/book">
+      <span>通讯录</span>
+      <v-icon>mdi-book</v-icon>
+    </v-btn>
+
+    <v-btn link to="/home">
+      <span >班级相册</span>
+      <v-icon>mdi-image</v-icon>
+    </v-btn>
+  </v-bottom-navigation>
+</v-app>
+</div>
+ 
 </template>
+<script>
+  export default {
+    data () {
+      return {
+        bottomNav: 3,
+      }
+    },
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+    computed: {
+      color () {
+        switch (this.bottomNav) {
+          case 0: return 'blue-grey'
+          case 1: return 'teal'
+          case 2: return 'brown'
+          case 3: return 'indigo'
+        }
+      },
+    },
+  }
+</script>
